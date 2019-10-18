@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Welcome To iTALA</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-        <section id="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <header id="header">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
                 <a class="navbar-brand pl-5" style="color: white;font-size: 40px;" href="index.html">
                     <img class="logo" alt="Brand" src="images/1.png"> 
                 </a>
@@ -24,36 +26,41 @@
                         <a class="nav-link" href="index.html"><b>HOME</b> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs"><b>ABOUT US</b></a>
+                        <a class="nav-link" href="team.html"><b>ABOUT US</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutUs"><b>EVENTS</b></a>
+                        <a class="nav-link" href="event.html"><b>EVENTS</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#projects"><b>VOTE</b></a>
+                        <a class="nav-link " href="nominees.html"><b>VOTE</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#process"><b>CONTACT</b></a>
+                        <a class="nav-link " href="contact.html"><b>CONTACT</b></a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link " href="#inspire"><b>INSPIRATION</b></a>
-                    </li> -->
+                    </li>
                     </ul>
                 </div>
-            </nav>
-            <div class="welcome-sect">
-                <div class="welcome-text-box">
-                    <h1 class="welcome-heading">
+                <div class="nav_btn">
+                    <a href="#" class="nav_btn-white float-right">start voting</a>
+                </div>
+            </nav> -->
+            <div class="container-fluid welcome-sect">
+                <div class="row welcome-text-box">
+                    <!-- <h1 class="welcome-heading">
                         <span class="heading-primary">itala</span>
                         <span class="heading-text">...building a global innovators forum.</span>
-                    </h1>
-
-                    <a href="#" class="btn btn--white btn--animated">CTA Button!</a>
+                    </h1> -->
+                    <div class="col-md-6"><a href="#" class="nav_logo float-left">logo</a></div>
+                    <div class="col-md-6"><a href="#" class="nav_btn-white float-right">start voting</a></div>
                 </div>
             </div>
-        </section>
+        </header>
     
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
