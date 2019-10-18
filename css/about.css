@@ -1,0 +1,12 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+.pls{
+    font-family: 'Pacifico', cursive !important;
+    color: red !important;
+}
+.card-image{
+    height: 100%;
+}
+
