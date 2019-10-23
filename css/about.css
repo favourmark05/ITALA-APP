@@ -25,4 +25,8 @@ html, body {
     /* font-size: 120px !important; */
     font-weight: bolder !important;
 }
+.fab{
+    font-size: 70px;
+    text-align: center;
+}
 
