@@ -1,0 +1,24 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+.about-us-text{
+    font-family: 'Pacifico', cursive !important;
+    color: red !important;
+}
+.card-image{
+    height: 100%;
+}
+
+/* this is the styling for the cotact us page */
+.map{
+    background-image: url("../img/contact-header.jpg");
+    background-size: cover;
+    height: 500px;
+}
+.contact-itala{
+    position: relative;
+    margin-top: -100px;
+
+}
+
