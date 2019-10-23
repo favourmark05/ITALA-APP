@@ -18,38 +18,24 @@
     </style>
 </head>
 <body>
-    <section class="nominee_header">
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light  bg-transparent fixed-top">
-            <a class="navbar-brand pl-5" style="color: black;font-size: 40px;" href="index.html">
-                <!-- <img class="logo" alt="Brand" src="images/1.png">  -->
-                Brand-Logo
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end pr-5 mr-5" id="navbarNav" >
-                <ul class="navbar-nav">
-                <li class="nav-item  effect-underline">
-                    <a class="nav-link" href="index.html"><b>HOME</b></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutUs"><b>ABOUT US</b> <span class="sr-only">(current)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutUs"><b>EVENTS</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#projects"><b>VOTE</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#process"><b>CONTACT</b></a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link " href="#inspire"><b>INSPIRATION</b></a>
-                </li> -->
-                </ul>
+    <section class="container nominee_header">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="nav_logo float-left"><img src="img/ntasa.png" alt="logo" width="200px;"></a>
+                    <span class="open-nav" style="font-size:30px;cursor:pointer;color: black;" onclick="openNav()">&#9776;</span>
+                    
+                    <!-- Overlay Navigation -->
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Event</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
 
         <div class="row">
             <div class="container nominee_welcome">
@@ -74,132 +60,108 @@
                 <div class="nominee_list-header">
                     <h1>
                         <span class="nominee_list-header-main center">Meet The Nominees For This Edition</span>
-                        <span class="nominee_list-header-sub">iTALA 2019 Nominees</span>
+                        <span class="nominee_list-header-sub">iTALA 2019 Nominees Categories</span>
                     </h1>
                 </div>
                 <div class="nominee_card">
-                    <div class="container-fluid">
+                    <div class="container">
+                        <!-- row one -->
                         <div class="row nominee_row">
-                            <!-- card one -->
-                            <div class="col-md-3">
-                                <div class="card" style="width:300px">
-                                    <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card nominee-card">
+                                    <img src="img/bg-4.jpg" class="card-img-top" alt="card-img">
                                     <div class="card-body">
-                                        <h4 class="card-title">John Doe</h4>
-                                        <p class="card-text">I am a nominee for...</p>
-                                        <a href="#" class="btn btn-primary">Read More</a>
+                                        <h5 class="card-title">Institution Awards</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card 
+                                            title and make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                    <!-- <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul> -->
+                                    <div class="card-body">
+                                        <a href="#" class="card-link" style="color:darkred">Read More...</a>
+                                        <a href="#" class="card-link" style="color: black">Vote Institions</a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- card two -->
-                            <div class="col-md-3">
-                                    <div class="card" style="width:300px">
-                                        <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                        <div class="card-body">
-                                            <h4 class="card-title">John Doe</h4>
-                                            <p class="card-text">I am a nominee for...</p>
-                                            <a href="#" class="btn btn-primary">Read More</a>
-                                        </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card nominee-card">
+                                    <img src="img/bg-5.jpg" class="card-img-top" alt="card-img">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Students Awards</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card 
+                                            title and make up the bulk of the card's content.
+                                        </p>
                                     </div>
-                            </div>
-                            <!-- card three -->
-                            <div class="col-md-3">
-                                    <div class="col-md-3">
-                                        <div class="card" style="width:300px">
-                                            <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                            <div class="card-body">
-                                                <h4 class="card-title">John Doe</h4>
-                                                <p class="card-text">I am a nominee for....</p>
-                                                <a href="#" class="btn btn-primary">Read More</a>
-                                            </div>
-                                        </div>
+                                    <!-- <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul> -->
+                                    <div class="card-body">
+                                        <a href="#" class="card-link" style="color:darkred">Read More...</a>
+                                        <a href="#" class="card-link" style="color:black">Vote Student</a>
                                     </div>
-                            </div>
-                            <!-- card four -->
-                            <div class="col-md-3">
-                                    <div class="col-md-3">
-                                        <div class="card" style="width:300px">
-                                            <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                            <div class="card-body">
-                                                <h4 class="card-title">John Doe</h4>
-                                                <p class="card-text">I am a nominee for...</p>
-                                                <a href="#" class="btn btn-primary">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
                             </div>
                         </div>
 
+                        <!-- row two -->
                         <div class="row nominee_row">
-                            <!-- card one -->
-                            <div class="col-md-3">
-                                <div class="card" style="width:300px">
-                                    <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                    <div class="card-body">
-                                        <h4 class="card-title">John Doe</h4>
-                                        <p class="card-text">I am a nominee for...</p>
-                                        <a href="#" class="btn btn-primary">Read More</a>
-                                    </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card nominee-card">
+                                <img src="img/bg-2.jpg" class="card-img-top" alt="card-img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lifetime Achievemeent Awards</h5>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card 
+                                        title and make up the bulk of the card's content.
+                                    </p>
+                                </div>
+                                <!-- <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul> -->
+                                <div class="card-body">
+                                    <a href="#" class="card-link" style="color:darkred">Read More...</a>
+                                    <a href="#" class="card-link" style="color: black">Vote Institions</a>
                                 </div>
                             </div>
-                            <!-- card two -->
-                            <div class="col-md-3">
-                                    <div class="card" style="width:300px">
-                                        <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                        <div class="card-body">
-                                            <h4 class="card-title">John Doe</h4>
-                                            <p class="card-text">I am a nominee for...</p>
-                                            <a href="#" class="btn btn-primary">Read More</a>
-                                        </div>
-                                    </div>
                             </div>
-                            <!-- card three -->
-                            <div class="col-md-3">
-                                    <div class="col-md-3">
-                                        <div class="card" style="width:300px">
-                                            <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                            <div class="card-body">
-                                                <h4 class="card-title">John Doe</h4>
-                                                <p class="card-text">I am a nominee for....</p>
-                                                <a href="#" class="btn btn-primary">Read More</a>
-                                            </div>
-                                        </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card nominee-card">
+                                    <img src="img/bg-8.jpg" class="card-img-top" alt="card-img">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Legendary Awards</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on the card 
+                                            title and make up the bulk of the card's content.
+                                        </p>
                                     </div>
-                            </div>
-                            <!-- card four -->
-                            <div class="col-md-3">
-                                    <div class="col-md-3">
-                                        <div class="card" style="width:300px">
-                                            <img class="card-img-top" src="img/bg-9.jpg" alt="Card image" width="100%">
-                                            <div class="card-body">
-                                                <h4 class="card-title">John Doe</h4>
-                                                <p class="card-text">I am a nominee for...</p>
-                                                <a href="#" class="btn btn-primary">Read More</a>
-                                            </div>
-                                        </div>
+                                    <!-- <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul> -->
+                                    <div class="card-body">
+                                        <a href="#" class="card-link" style="color:darkred">Read More...</a>
+                                        <a href="#" class="card-link" style="color:black">Vote Student</a>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        
+        </div>  
     </section>
 
-    <!-- <section class="nominee_cube">
-        <div class="scene">
-            <div class="cube">
-              <div class="cube__face cube__face--front">front</div>
-              <div class="cube__face cube__face--back">back</div>
-              <div class="cube__face cube__face--right">right</div>
-              <div class="cube__face cube__face--left">left</div>
-              <div class="cube__face cube__face--top">top</div>
-              <div class="cube__face cube__face--bottom">bottom</div>
-            </div>
-        </div>
-    </section> -->
     
 
 
@@ -210,29 +172,7 @@
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			  crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-    // FOR NAVBAR ON SCROLL BG-COLOR CHANGER
-    $(document).ready(function(){
-    //     var checkScrollBar = function(){
-    //     $('.bg-dark').css({
-    //         backgroundColor: $(this).scrollTop() > 1 ?
-    //         'rgb(0, 0, 0)' : 'transparent'
-    //     })
-    //     }
-    // $(window).on('load resize scroll', checkScrollBar)
-    //     });
-    $(window).on('scroll', function(){
-        if($(window).scrollTop()){
-            //console.log(window.scrollTo)
-            $('#nav').addClass('dark');
-        }
-         else {
-            $('#nav').removeClass('dark');
-        }   
-    })
-    })
-        // INITIALIZING AOS - ANIMATE ON SCROLL LIBRARY
-        AOS.init();
+    <script src="js/main.js"></script>
     
     </script>
 </body>
