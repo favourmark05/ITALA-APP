@@ -10,57 +10,80 @@
     <link rel="stylesheet" href="css/style.css">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+          font-family: 'Lato', sans-serif;
+        }
+        
+        
+        </style>
 </head>
 <body>
         <header id="header">
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-                <a class="navbar-brand pl-5" style="color: white;font-size: 40px;" href="index.html">
-                    <img class="logo" alt="Brand" src="images/1.png"> 
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end pr-5 mr-5" id="navbarNav" >
-                    <ul class="navbar-nav">
-                    <li class="nav-item  effect-underline">
-                        <a class="nav-link" href="index.html"><b>HOME</b> <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html"><b>ABOUT US</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="event.html"><b>EVENTS</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="nominees.html"><b>VOTE</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="contact.html"><b>CONTACT</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#inspire"><b>INSPIRATION</b></a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="nav_btn">
-                    <a href="#" class="nav_btn-white float-right">start voting</a>
-                </div>
-            </nav> -->
             <div class="container-fluid welcome-sect">
                 <div class="row welcome-text-box">
-                    <!-- <h1 class="welcome-heading">
-                        <span class="heading-primary">itala</span>
-                        <span class="heading-text">...building a global innovators forum.</span>
-                    </h1> -->
-                    <div class="col-md-6"><a href="#" class="nav_logo float-left">logo</a></div>
-                    <div class="col-md-6"><a href="#" class="nav_btn-white float-right">start voting</a></div>
+                    <div class="col-md-12">
+                        <a href="#" class="nav_logo float-left"><img src="img/ntasa.png" alt="logo" width="200px;"></a>
+                        <span class="open-nav" style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+                        
+                        <!-- Overlay Navigation -->
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <a href="#">About</a>
+                                <a href="#">Event</a>
+                                <a href="#">Vote</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Welcome-text-contents -->
+                <div class="row  welcome-contents">
+                    <div class="col-md-6">
+                        <a href="team.html" class="welcome-btn welcome-btn-exp">Explore</a>
+                        <a href="nominees.html" class="welcome-btn welcome-btn-vot">Start Voting</a>
+                        <a href="hello.html" class="welcome-btn welcome-btn-hello">Say Hello</a>
+                    </div>
+
+                    <div class="col-md-6 welcome-carousel">
+                        <!-- Carousel part -->
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                                <h1 class="carousel-text">ITALA</h1>
+                                </div>
+                                <div class="carousel-item">
+                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                                <h1 class="carousel-text">Raising Innovators</h1>                                </div>
+                                <div class="carousel-item">
+                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                                <h1 class="carousel-text">Promoting Inclusivity</h1>                                </div>
+                            </div>
+                            <!-- <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a> -->
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            
         </header>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+                 
 </body>
 </html>
