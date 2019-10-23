@@ -10,3 +10,15 @@ html, body {
     height: 100%;
 }
 
+/* this is the styling for the cotact us page */
+.map{
+    background-image: url("../img/contact-header.jpg");
+    background-size: cover;
+    height: 500px;
+}
+.contact-itala{
+    position: relative;
+    margin-top: -100px;
+
+}
+
